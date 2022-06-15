@@ -11,9 +11,9 @@ recognition.onresult = function(event) {
     console.log(event);
 
     var content = event.results[0][0].transcript;
-    console.log(Content);
+    console.log(content);
 
-    document.getElementById("textbox").innerHTML = Content;
+    document.getElementById("textbox").innerHTML = content;
     speak();
 }
 function speak(){
